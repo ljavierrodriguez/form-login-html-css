@@ -1,0 +1,61 @@
+/* Selector de Etiqueta o Elemento o Tag */
+body {
+    background-image: url('../img/bg-page.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Selector de Clase */
+
+/* 
+
+margin: 10px; trbl
+margin: 10px 10px; tb rl
+margin: 10px 10px 10px; t rl b
+margin: 10px 10px 10px 10px; t r b l
+
+padding: 10px; trbl
+padding: 10px 10px; tb rl
+padding: 10px 10px 10px; t rl b
+padding: 10px 10px 10px 10px; t r b l
+
+*/
+
+.main-container {
+    width: 400px;
+    margin: 10% auto;
+    background-image: url('../img/bg-container.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    height: 500px;
+    box-shadow: -10px 12px 5px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Selector Hijo */
+.main-container > .photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: 10px;
+    border: 5px solid white;
+}
+
+/* Selector Descendiente */
+.main-container .form-container {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-container .form-container input {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 5px;
+    outline: none;
+}
